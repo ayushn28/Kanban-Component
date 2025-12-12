@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background-color: #fafafa; /* Tailwind bg-neutral-50 */
+  color: #171717; /* Tailwind text-neutral-900 */
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
