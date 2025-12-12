@@ -33,7 +33,20 @@ export default defineConfig({
           }]
         },
         setupFiles: ['.storybook/vitest.setup.ts']
-      }
+      },
+        build: {
+    rollupOptions: {
+      external: [
+        /\.stories\.tsx?$/,
+        /\.story\.tsx?$/,
+        /\.mdx$/,
+      ]
+    }
+  },
+
+  optimizeDeps: {
+    exclude: ['@storybook/*', '.storybook']
+  }
     }]
   }
 });
